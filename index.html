@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fauna Clasificada</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .menu {
+            background-color: steelblue;
+            overflow: hidden;
+        }
+        .menu a {
+            float: left;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+        .menu a:hover {
+            background-color: #575757;
+        }
+        .content {
+            margin: 20px;
+            display: none;
+        }
+        .content.active {
+            display: block;
+        }
+        h2 {
+            color: #333;
+        }
+        .card {
+            background-color: white;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            padding: 16px;
+            margin: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    </style>
+    <script>
+        function showContent(type) {
+            // Ocultar todos los contenidos
+            const contents = document.querySelectorAll('.content');
+            contents.forEach(content => content.classList.remove('active'));
+            
+            // Mostrar el contenido seleccionado
+            document.getElementById(type).classList.add('active');
+        }
+    </script>
+</head>
+<body>
+
+    <div class="menu">
+        <a href="" onclick="showContent('inicio')">Inicio</a>
+        <a href="#" onclick="showContent('peces')">Peces</a>
+        <a href="#" onclick="showContent('aves')">Aves</a>
+        <a href="#" onclick="showContent('mamiferos')">Mamíferos</a>
+        <a href="#" onclick="showContent('anfibios')">Anfibios</a>
+    </div>
+
+    <div id="peces" class="content">
+        <h2>Peces</h2>
+        <ul>
+            <div class="card">
+                <div class="photo">(foto)</div>
+                <div class="info">
+                    <p><strong>Nombre:</strong>Lamprea marina</p>
+                    <p><strong>Nombre científico:</strong>Petromyzon marinus</p>
+                    <p><strong>Nombre en asturiano:</strong>Llamprea</p>
+                    <p><strong>Descripción: </strong>El tamaño de esta especie migradora, puede ser superior a 50 cm de longitud total, alcanzando más de un metro en la madurez, con pesos de dos a tres kg. Ventosa bucal con placa preoral pequeña y boca con odontoides agudos. Cuerpo cilíndrico, de color gris, gris-verdoso o pardo. Carece de aletas pares</p>
+                    <p><strong>Hábitat común:</strong> Algunos cauces de los ríos Eo, Navia, Narcea, Sella</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="photo">(foto)</div>
+                <div class="info">
+                    <p><strong>Nombre:</strong>Salmón atlántico</p>
+                    <p><strong>Nombre científico:</strong>Salmo salar</p>
+                    <p><strong>Nombre en asturiano:</strong>Salmón</p>
+                    <p><strong>Descripción: </strong>pez de gran tamaño y cuerpo aerodinámico, puede pesar más de 30 kg cuando es adulto y medir hasta 1,50 m. Se reconocen por su color plateado, a veces con reflejos azulados, moteado de negro, y su aleta caudal cóncava</p>
+                    <p><strong>Hábitat común:</strong> Diversos ríos de la región</p>
+                </div>
+            </div>
+        </ul>
+    </div>
+
+    <div id="aves" class="content">
+        <h2>Aves</h2>
+        <ul>
+            <div class="card">
+                <div class="photo">(foto)</div>
+                <div class="info">
+                    <p><strong>Nombre:</strong>Alimoche</p>
+                    <p><strong>Nombre científico:</strong>Neophron percnopterus</p>
+                    <p><strong>Nombre en asturiano:</strong>Zapiquera</p>
+                    <p><strong>Descripción: </strong>Ave de tamaño entre mediano y grande y aspecto completamente inconfundible. Los ejemplares adultos lucen un plumaje mayoritariamente blanco sucio con algunas regiones teñidas de crema, a excepción de las rémiges, que son completamente negras</p>
+                    <p><strong>Hábitat común:</strong> Cordillera cantábrica</p>
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="photo">(foto)</div>
+                <div class="info">
+                    <p><strong>Nombre:</strong>Avión Zapador</p>
+                    <p><strong>Nombre científico:</strong>Riparia riparia</p>
+                    <p><strong>Nombre en asturiano:</strong>Andarina de ríu</p>
+                    <p><strong>Descripción: </strong>Es el menor de nuestros aviones y golondrinas, aunque sólo es ligeramente más pequeño que el resto. Exhibe partes superiores de color pardo mate e inferiores blanquecinas, con límites netos entre ambas. Posee alas largas y apuntadas, que en vuelo destacan por su parte inferior y anterior más oscura.</p>
+                    <p><strong>Hábitat común:</strong> Tramos bajos del Nalón y de su afluente el Caudal</p>
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="photo">(foto)</div>
+                <div class="info">
+                    <p><strong>Nombre:</strong>Azor</p>
+                    <p><strong>Nombre científico:</strong>Accipiter gentilis</p>
+                    <p><strong>Nombre en asturiano:</strong>Ferriasacu</p>
+                    <p><strong>Descripción: </strong>Es de tamaño mediano (mide entre 48 y 58 cm; bastante similar a un ratonero) y su patrón de colores le asemejan a un halcón, aunque la especie se encuentra realmente emparentada con las águilas y muy especialmente con el gavilán.</p>
+                    <p><strong>Hábitat común:</strong> Toda la región</p>
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="photo">(foto)</div>
+                <div class="info">
+                    <p><strong>Nombre:</strong>Cormorán moñudo</p>
+                    <p><strong>Nombre científico:</strong>Phalacrocorax aristotelis</p>
+                    <p><strong>Nombre en asturiano:</strong>Cormorán moñudo</p>
+                    <p><strong>Descripción: </strong>Recuerda al cormorán grande, aunque se distingue de él por ser más pequeño y esbelto y por poseer la cabeza y el pico más pequeños, la frente más marcada y el cuello más estrecho que la cabeza. La garganta es totalmente negra y la comisura del pico, amarilla, destaca sobre el tono general negruzco.</p>
+                    <p><strong>Hábitat común:</strong> Fachada litoral</p>
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="photo">(foto)</div>
+                <div class="info">
+                    <p><strong>Nombre:</strong>Halcón</p>
+                    <p><strong>Nombre científico:</strong>Falco peregrinus</p>
+                    <p><strong>Nombre en asturiano:</strong>Ferre palomberu</p>
+                    <p><strong>Descripción: </strong>Ave de presa (45cm) identificable en vuelo por la silueta de ancla que forman sus largas alas y cola. Plumaje variable, desde oscuro a gris claro.</p>
+                    <p><strong>Hábitat común:</strong> Acantilados costeros de todo el litoral, cortados calcáreos del oriente</p>
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="photo">(foto)</div>
+                <div class="info">
+                    <p><strong>Nombre:</strong>Urogallo cantábrico</p>
+                    <p><strong>Nombre científico:</strong>Tetrao urogallus cantabricus</p>
+                    <p><strong>Nombre en asturiano:</strong>Gallu de monte</p>
+                    <p><strong>Descripción: </strong>El urogallo macho es un ave de color oscuro, con plumaje negruzco que adquiere reflejos de un verde metálico en el pecho, abdomen pardo a negruzco con manchas blancas, alas largas y pardas y cola ancha que despliega con orgullo en la exhibición nupcial. Sobre el ojo destaca el rojo de su ceja carnosa, la carúncula.</p>
+                    <p><strong>Hábitat común:</strong> Allande, Aller, Amieva, Belmonte de Miranda, Cabrales, Cangas del Narcea, Caso, Degaña, Ibias, Lena, Quirós, Sobrescobio, Teverga, Tineo</p>
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="photo">(foto)</div>
+                <div class="info">
+                    <p><strong>Nombre:</strong>Andarríos chico</p>
+                    <p><strong>Nombre científico:</strong>Actitis hypoleucos</p>
+                    <p><strong>Nombre en asturiano:</strong>-</p>
+                    <p><strong>Descripción: </strong>Es una limícola estilizada, de pequeño tamaño (el menor entre los andarríos) y patas bastante cortas, que balancea la cola y la cabeza de forma característica cuando está posada.</p>
+                    <p><strong>Hábitat común:</strong> Orillas de lagos y ríos, estuarios</p>
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="photo">(foto)</div>
+                <div class="info">
+                    <p><strong>Nombre:</strong>Búho real</p>
+                    <p><strong>Nombre científico:</strong>Bubo bubo</p>
+                    <p><strong>Nombre en asturiano:</strong>Buxón</p>
+                    <p><strong>Descripción: </strong>Ave estrigiforme de la familia Strigidae, que sobresale por su majestuosidad. Lo más característico es su pecho blanco que deja al descubierto cada vez que canta, especialmente cuando hay luna llena. Este tipo de búho es el ave rapaz nocturna más grande de Europa.</p>
+                    <p><strong>Hábitat común:</strong> Zona oriental de la región</p>
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="photo">(foto)</div>
+                <div class="info">
+                    <p><strong>Nombre:</strong>Gorrión alpino</p>
+                    <p><strong>Nombre científico:</strong>Montefringilla nivalis</p>
+                    <p><strong>Nombre en asturiano:</strong>Picalvín</p>
+                    <p><strong>Descripción: </strong>Gorrión rechoncho de 16.5 - 19 cm (6.5 - 7.5 pulg) de largo. Tiene la parte superior café, parte inferior blanca, y cabeza gris. Tiene un panel alar estrecho de color blanco. En verano, el pico es negro, y tiene un babero negro.</p>
+                    <p><strong>Hábitat común:</strong> Zona oriental de la región</p>
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="photo">(foto)</div>
+                <div class="info">
+                    <p><strong>Nombre:</strong>Perdiz pardilla</p>
+                    <p><strong>Nombre científico:</strong>Perdix perdix</p>
+                    <p><strong>Nombre en asturiano:</strong>Pardina</p>
+                    <p><strong>Descripción: </strong>Gallinácea con una envergadura de 45 centímetros. Presenta una coloración castaño-naranja en la cara, gris moteado en el dorso, barrado castaño en los flancos y gris en cuello.</p>
+                    <p><strong>Hábitat común:</strong> Cordillera cantábrica principalmente en las estribaciones de los Picos de Europa y sur de Somiedo</p>
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="photo">(foto)</div>
+                <div class="info">
+                    <p><strong>Nombre:</strong>Pico menor</p>
+                    <p><strong>Nombre científico:</strong>Dendrocopos minor</p>
+                    <p><strong>Nombre en asturiano:</strong>Piquetín</p>
+                    <p><strong>Descripción: </strong>Ave de pequeño tamaño (aprox. 16 cm). Aspecto muy similar al del pico carpintero, aunque mucho más chico. Plumaje dorsal blanco y negro, más oscuro en el dorso y más blanco en el vientre</p>
+                    <p><strong>Hábitat común:</strong> Zona central de la región</p>
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="photo">(foto)</div>
+                <div class="info">
+                    <p><strong>Nombre:</strong>Pito negro</p>
+                    <p><strong>Nombre científico:</strong>Dryocopus martius</p>
+                    <p><strong>Nombre en asturiano:</strong>Picafayes</p>
+                    <p><strong>Descripción: </strong>Pertenece a la familia Picidae, que incluye todos los pájaros carpinteros y el tuercecuello. Identificación: Mide entre 45 y 47 cm de longitud y puede llegar a los 68 cm de envergadura, aproximadamente como una graja. Es negro en casi su totalidad.</p>
+                    <p><strong>Hábitat común:</strong> Hayedos, robledales al sur de la región y concejos del oriente</p>
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="photo">(foto)</div>
+                <div class="info">
+                    <p><strong>Nombre:</strong>Águila real</p>
+                    <p><strong>Nombre científico:</strong>Aquila chrysaetos</p>
+                    <p><strong>Nombre en asturiano:</strong>Aigla rial</p>
+                    <p><strong>Descripción: </strong>Mide entre 90 centímetros y un metro, con una envergadura de 2.15 a 2.27 m y peso de 3.8 a 6.6 kilogramos. Las dimensiones del macho varían entre 80 y 87 cm de longitud, con 1.82 a 2.12 metros de envergadura, y peso de 3.5 a 6.0 kilos; ambos presentan un plumaje color café</p>
+                    <p><strong>Hábitat común:</strong> Toda la región excepto litoral</p>
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="photo">(foto)</div>
+                <div class="info">
+                    <p><strong>Nombre:</strong>Zarapito real</p>
+                    <p><strong>Nombre científico:</strong>Numenius arquata</p>
+                    <p><strong>Nombre en asturiano:</strong>Algaraván</p>
+                    <p><strong>Descripción: </strong>Ave limícola de tamaño grande (aprox. 57 cm), patas azuladas o grisáceas muy largas y pico largo y curvo. Plumaje pardo amarillento, con tonos ocres en el pecho y los flancos. Zona ventral más pálida y con un rayado oscuro.</p>
+                    <p><strong>Hábitat común:</strong> Ría de Villaviciosa, Eo</p>
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="photo">(foto)</div>
+                <div class="info">
+                    <p><strong>Nombre:</strong>Ostrero euroasiático</p>
+                    <p><strong>Nombre científico:</strong>Haematopus ostralegus</p>
+                    <p><strong>Nombre en asturiano:</strong>Llampariegu</p>
+                    <p><strong>Descripción: </strong>Ave corpulenta y de gran tamaño, que puede alcanzar algo más de 40 cm de longitud y entorno a 400-700 g de peso. El plumaje es de un negro muy intenso en las partes superiores del animal: el lomo, la cabeza y el cuello. Las partes inferiores en cambio, peto y abdomen, son de un blanco níveo</p>
+                    <p><strong>Hábitat común:</strong> Costas occidental y central</p>
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="photo">(foto)</div>
+                <div class="info">
+                    <p><strong>Nombre:</strong>Pico mediano</p>
+                    <p><strong>Nombre científico:</strong>Dendrocopos medius</p>
+                    <p><strong>Nombre en asturiano:</strong>Picaniellu testarroxa</p>
+                    <p><strong>Descripción: </strong>El ostrero es una de las limícolas más grandes de la región. Mide entre 40 y 45 cm de largo, de los cuales 8–9 cm corresponden a su largo pico rojo, y tiene una envergadura alar de 80-85 cm. ​ Es un ave acuática de plumaje negro en las partes superiores (cabeza y pecho) y con las inferiores de color blanco</p>
+                    <p><strong>Hábitat común:</strong> Robledales montanos del tercio oriental</p>
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="photo">(foto)</div>
+                <div class="info">
+                    <p><strong>Nombre:</strong>Paíño europeo</p>
+                    <p><strong>Nombre científico:</strong>Hydrobates pelagicus</p>
+                    <p><strong>Nombre en asturiano:</strong>Paín</p>
+                    <p><strong>Descripción: </strong>Es el ave marina más pequeña de las costas Ibéricas. Plumaje uniforme oscuro casi negro. Destacan el obispillo (zona terminal de la espalda) y una franja bajo las alas, ambos de color blanco. Vuelo a ras del agua, irregular como el de los murciélagos, siguiendo el oleaje.</p>
+                    <p><strong>Hábitat común:</strong> Islotes aislados de la costa oriental</p>
+                </div>
+            </div>
+        </ul>
+    </div>
+
+    <div id="mamiferos" class="content">
+        <h2>Mamíferos</h2>
+        <ul>
+            <div class="card">
+                <div class="photo">(foto)</div>
+                <div class="info">
+                    <p><strong>Nombre:</strong>Murciélago de cueva</p>
+                    <p><strong>Nombre científico:</strong>Miniopterus schreibersii</p>
+                    <p><strong>Nombre en asturiano:</strong>Esperteyu de cueves</p>
+                    <p><strong>Descripción: </strong>Es el vespertiliónido más abundante en los hábitats cavernosos. Se trata de un murciélago de tamaño mediano, con una longitud de 4 a 5 cm y un peso de entre 10 y 15 g. El hocico es muy corto, conformando una cara que recuerda la de un perro pequinés</p>
+                    <p><strong>Hábitat común:</strong> Cavidades kársicas del área central y oriental</p>
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="photo">(foto)</div>
+                <div class="info">
+                    <p><strong>Nombre:</strong>Murciélago de Geoffroy</p>
+                    <p><strong>Nombre científico:</strong>Myotis emarginatus</p>
+                    <p><strong>Nombre en asturiano:</strong>Esperteyón d'oreya fisgada</p>
+                    <p><strong>Descripción: </strong>Murciélago de tamaño mediano-pequeño, con orejas de longitud media que extendidas llegan justo hasta el hocico. Presentan una escotadura en la oreja más marcada que en otras especies</p>
+                    <p><strong>Hábitat común:</strong> Desvanes, iglesias, establos, edificios abandonados</p>
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="photo">(foto)</div>
+                <div class="info">
+                    <p><strong>Nombre:</strong>Murciélago ratonero grande</p>
+                    <p><strong>Nombre científico:</strong>Myotis myotis</p>
+                    <p><strong>Nombre en asturiano:</strong>Esperteyón</p>
+                    <p><strong>Descripción: </strong>Sus 8 cm de longitud y sus casi 40 g de peso lo convierten en uno de los mayores murciélagos ibéricos. Las orejas son largas y anchas, el hocico afilado y el pelaje varía del pardo al gris en el dorso y es gris claro en el vientre</p>
+                    <p><strong>Hábitat común:</strong> Distintas cuevas</p>
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="photo">(foto)</div>
+                <div class="info">
+                    <p><strong>Nombre:</strong>Murciélago ratonero mediano</p>
+                    <p><strong>Nombre científico:</strong>Myotis blythii</p>
+                    <p><strong>Nombre en asturiano:</strong>Esperteyón medianu</p>
+                    <p><strong>Descripción: </strong>El ratonero mediano (Myotis blythii) es muy similar al grande, diferenciándose únicamente por su menor tamaño (7 cm y hasta 30 g), el hocico ligeramente más afilado, una coloración más clara y a menudo una mancha blanquecina en el dorso</p>
+                    <p><strong>Hábitat común:</strong> Cueva de las Caldas en Oviedo</p>
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="photo">(foto)</div>
+                <div class="info">
+                    <p><strong>Nombre:</strong>Nutria</p>
+                    <p><strong>Nombre científico:</strong>Lutra lutra</p>
+                    <p><strong>Nombre en asturiano:</strong>Llondra</p>
+                    <p><strong>Descripción: </strong>Presenta un aspecto similar al de una rata robusta. Su cara es bastante similar a la del carpincho. Posee unas orejas pequeñas que pueden ocluirse durante la inmersión. Los ojos son pequeños y están ubicados en una misma línea junto con las narinas y las orejas</p>
+                    <p><strong>Hábitat común:</strong> Todos los ríos con buen caudal y aguas de buena calidad</p>
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="photo">(foto)</div>
+                <div class="info">
+                    <p><strong>Nombre:</strong>Oso Pardo</p>
+                    <p><strong>Nombre científico:</strong>Ursus arctos</p>
+                    <p><strong>Nombre en asturiano:</strong>Osu</p>
+                    <p><strong>Descripción: </strong>Es el mayor mamífero de los Pirineos. El peso de los machos oscila entre 150 y 230 kg (aunque la mayoría no pasan de los 200) y el de las hembras entre 80 y 150 (la mayoría pesan menos de 130 kg). Tienen el cuerpo y las extremidades robustas y la cola muy corta. La altura en la cruz oscila entre 90-100 cm</p>
+                    <p><strong>Hábitat común:</strong> Caso, Ponga, Allande, Belmonte de Miranda, Cangas del Narcea, Degaña, Grado, Ibias, Lena, Proaza, Quirós, Salas, Santo Adriano, Somiedo, Teverga, Tineo, Yernes y Tameza </p>
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="photo">(foto)</div>
+                <div class="info">
+                    <p><strong>Nombre:</strong>Desmán ibérico</p>
+                    <p><strong>Nombre científico:</strong>Galemys pyrenaicus</p>
+                    <p><strong>Nombre en asturiano:</strong>Topu fediondu</p>
+                    <p><strong>Descripción: </strong>Tiene una cola larga y gruesa de forma redondeada y escamosa, pelo largo y liso de color castaño o gris, con irisaciones y el vientre más claro, ojos muy pequeños y ausencia de pabellones auditivos</p>
+                    <p><strong>Hábitat común:</strong> Río Cares, Sella, Nalón, Navia, Porcía</p>
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="photo">(foto)</div>
+                <div class="info">
+                    <p><strong>Nombre:</strong>Liebre de piornal</p>
+                    <p><strong>Nombre científico:</strong>Lepus castroviejoi</p>
+                    <p><strong>Nombre en asturiano:</strong>Llebre de piornal</p>
+                    <p><strong>Descripción: </strong>Presenta un pelaje de tonos amarillentos, con la parte ventral blanca, que presenta una mayor extensión que en la liebre europea, pudiendo llegar a las extremidades anteriores, aunque con menor extensión que en la liebre ibérica (Palacios, 1977). Es notable el contraste entre el color del dorso y el blanco del vientre</p>
+                    <p><strong>Hábitat común:</strong> Áreas de montaña</p>
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="photo">(foto)</div>
+                <div class="info">
+                    <p><strong>Nombre:</strong>Liebre europea</p>
+                    <p><strong>Nombre científico:</strong>Lepus europaeus</p>
+                    <p><strong>Nombre en asturiano:</strong>Llebre europea</p>
+                    <p><strong>Descripción: </strong>Es de tamaño mediano, con orejas muy largas, cola corta y patas largas, las posteriores mucho más que las anteriores. El pelaje es espeso, de color pardo amarillento o pardo grisáceo entremezclado con negro; el vientre es gris blancuzco</p>
+                    <p><strong>Hábitat común:</strong> Escasos enclaves en Piloña, Caso, Ponga</p>
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="photo">(foto)</div>
+                <div class="info">
+                    <p><strong>Nombre:</strong>Liebre mediterránea</p>
+                    <p><strong>Nombre científico:</strong>Lepus granatensis</p>
+                    <p><strong>Nombre en asturiano:</strong>Llebre de ibérica</p>
+                    <p><strong>Descripción: </strong>Es la liebre de mayor tamaño de la Península Ibérica, sin dimorfismo sexual acentuado, las hembras son algo más pesadas. Extremidades y orejas largas, estas últimas con el extremo de color negro, el pelo es de color pardo amarillento, a excepción de la zona ventral de color blanquecino y poca extensión</p>
+                    <p><strong>Hábitat común:</strong> Brezales y piornales de concejos del occidente de la región</p>
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="photo">(foto)</div>
+                <div class="info">
+                    <p><strong>Nombre:</strong>Lobo</p>
+                    <p><strong>Nombre científico:</strong>Canis lupus</p>
+                    <p><strong>Nombre en asturiano:</strong>Llobu</p>
+                    <p><strong>Descripción: </strong>Son animales cuadrúpedos, mamíferos, con cuerpos de entre 60 y 90 cm de alto y un peso de entre 32 y 70 kg. Suelen medir entre 1,30 y 2 metros de largo. Poseen una cola larga, y no son, en principio, demasiado diferentes anatómicamente de un perro</p>
+                    <p><strong>Hábitat común:</strong> Casi toda la región</p>
+                </div>
+            </div>
+            
+            
+        </ul>
+    </div>
+
+    <div id="anfibios" class="content">
+        <h2>Anfibios</h2>
+        <ul>
+            <div class="card">
+                <div class="photo">(foto)</div>
+                <div class="info">
+                    <p><strong>Nombre:</strong>Rana común</p>
+                    <p><strong>Nombre científico:</strong>Rana perezi</p>
+                    <p><strong>Nombre en asturiano:</strong>Xaronca de ríu</p>
+                    <p><strong>Descripción: </strong>Anuro (anfibio sin cola en estado adulto) grande (hasta 10 cm de longitud total). Posee una cabeza tan larga como ancha, con el hocico redondeado y el tímpano muy visible. Las extremidades traseras están muy desarrolladas, adaptadas para el salto y la natación, con grandes membranas interdigitales</p>
+                    <p><strong>Hábitat común:</strong> Ríos Eo, Navia, Nalón, Narcea, Sella, áreas de montaña de Lena y Aller</p>
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="photo">(foto)</div>
+                <div class="info">
+                    <p><strong>Nombre:</strong>Rana de San Antón</p>
+                    <p><strong>Nombre científico:</strong>Hyla arborea</p>
+                    <p><strong>Nombre en asturiano:</strong>Xaronquina verde</p>
+                    <p><strong>Descripción: </strong>Es alargada, de cabeza ancha y dedos terminados en discos adhesivos. A lo largo de carda flanco corre una línea lateral negra bordeada de blanco. La piel es lisa y de un verde hierba en el dorso, mientras que el vientre resulta ligeramente granuloso y de un gris pálido</p>
+                    <p><strong>Hábitat común:</strong> Gijón, Ribadesella, Villaviciosa, Lena, Quirós</p>
+                </div>
+            </div>
+            
+        </ul>
+</body>
+</html>
